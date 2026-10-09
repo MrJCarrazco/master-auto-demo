@@ -6,64 +6,138 @@
 <meta name="robots" content="noindex, nofollow"><!-- DEMO: keep noindex until commissioned -->
 <title>Master Auto Repair — Auto Repair in Wasilla, AK | DEMO</title>
 <meta name="description" content="DEMO website concept for Master Auto Repair, Wasilla AK — professional auto repair and maintenance at 211 E Parks Hwy.">
-<meta name="theme-color" content="#1a1a1d">
+<meta name="theme-color" content="#0b0d10">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --coal:#1a1a1d; --coal2:#2c2c31; --red:#c3362b; --red-dark:#9c2a21;
-  --paper:#f6f4f0; --ink:#1d1d1f; --steel:#8a97a5; --ok:#2e7d32;
+  --carbon:#0b0d10; --carbon2:#14181e; --panel:#1a2029; --steel:#8b98a8;
+  --ember:#ff6a00; --ember-hot:#ff8c1a; --chrome:#e8edf3; --mist:#b9c4d0; --ok:#3ddc84;
+  --display:'Oswald',Impact,sans-serif; --body:'Barlow',system-ui,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
-body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
-.demo-banner{background:repeating-linear-gradient(45deg,#ffd54f,#ffd54f 12px,#212121 12px,#212121 24px);padding:3px}
-.demo-banner p{background:#212121;color:#ffd54f;text-align:center;font-weight:700;font-size:.85rem;padding:.55rem .75rem;letter-spacing:.03em}
-header{background:linear-gradient(160deg,var(--coal),var(--coal2));color:#fff;padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;position:sticky;top:0;z-index:40;box-shadow:0 2px 10px rgba(0,0,0,.3)}
-.logo{font-size:1.3rem;font-weight:800;letter-spacing:.02em}
-.logo span{color:var(--red)}
-.call-top{background:var(--red);color:#fff;font-weight:800;text-decoration:none;padding:.55rem 1rem;border-radius:6px}
-.call-top:hover,.call-top:focus{background:#e04b3f}
-.hero{background:linear-gradient(160deg,var(--coal) 0%,var(--coal2) 70%);color:#fff;padding:3rem 1.25rem 4rem;text-align:center}
-.hero h1{font-size:clamp(1.7rem,5vw,2.8rem);line-height:1.2;max-width:40rem;margin:0 auto .75rem}
-.hero h1 em{color:var(--red);font-style:normal}
-.hero p{max-width:34rem;margin:0 auto 1.5rem;color:#c9cdd3}
-.badge-row{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.6rem}
-.badge{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:.3rem .9rem;font-size:.82rem;color:#dfe3e8}
-.cta{display:inline-block;background:var(--red);color:#fff;font-weight:800;font-size:1.1rem;text-decoration:none;padding:.9rem 1.6rem;border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,.4)}
-.cta:hover,.cta:focus{background:#e04b3f}
-.hero-svg{max-width:540px;width:92%;margin:2.2rem auto 0;display:block}
-.svg-caption{font-size:.75rem;color:#8a97a5;margin-top:.4rem}
-section{padding:2.75rem 1.25rem;max-width:62rem;margin:0 auto}
-h2{font-size:1.6rem;color:var(--coal);margin-bottom:1rem}
-h2 .tick{color:var(--red)}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem}
-.card{background:#fff;border-radius:10px;padding:1.25rem;box-shadow:0 2px 8px rgba(26,26,29,.08);border-top:4px solid var(--red)}
-.card h3{color:var(--coal);margin-bottom:.4rem;font-size:1.05rem}
-.card p{font-size:.95rem}
-.why{background:#fff}
-.why-wrap{max-width:62rem;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem}
-.why-item{display:flex;gap:.6rem;align-items:flex-start}
-.check{color:var(--ok);font-weight:900;font-size:1.2rem;line-height:1.3}
-.hours-nap{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
-.hours-nap table{border-collapse:collapse;width:100%}
-.hours-nap td{padding:.3rem .5rem;border-bottom:1px solid #e4ded4;font-size:.95rem}
-.map-wrap{margin-top:1.5rem;border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(26,26,29,.15)}
-.map-wrap iframe{display:block;width:100%;height:320px;border:0}
-.map-note{font-size:.8rem;color:#5c6670;margin-top:.5rem}
-.quote{background:var(--coal)}
-.quote-inner{max-width:34rem;margin:0 auto;color:#fff}
-.quote h2{color:#fff}
-.quote label{display:block;font-weight:600;margin:.8rem 0 .25rem;font-size:.95rem}
-.quote input,.quote textarea{width:100%;padding:.65rem;border:none;border-radius:6px;font:inherit}
-.quote button{margin-top:1.1rem;width:100%;background:var(--red);color:#fff;font-weight:800;font-size:1.05rem;border:none;padding:.9rem;border-radius:8px;cursor:pointer}
-.quote button:hover{background:#e04b3f}
-.quote small{display:block;margin-top:.6rem;color:#aab4bf}
-footer{background:#121215;color:#8a97a5;text-align:center;padding:1.5rem 1rem 5.5rem;font-size:.85rem}
-.sticky-call{position:fixed;bottom:0;left:0;right:0;background:var(--red);text-align:center;padding:.85rem;z-index:50;box-shadow:0 -3px 12px rgba(0,0,0,.3)}
-.sticky-call a{color:#fff;font-weight:800;text-decoration:none;font-size:1.05rem}
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+body{font-family:var(--body);color:var(--mist);background:var(--carbon);line-height:1.65;overflow-x:hidden}
+::selection{background:var(--ember);color:#fff}
+
+.demo-banner{background:repeating-linear-gradient(45deg,#ffd54f,#ffd54f 12px,#111 12px,#111 24px);padding:3px;position:relative;z-index:60}
+.demo-banner p{background:#111;color:#ffd54f;text-align:center;font-weight:700;font-size:.82rem;padding:.55rem .75rem;letter-spacing:.03em}
+
+header{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.85rem 1.4rem;background:rgba(11,13,16,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(139,152,168,.16)}
+.logo{font-family:var(--display);font-weight:700;font-size:1.4rem;color:var(--chrome);text-transform:uppercase;letter-spacing:.05em}
+.logo span{color:var(--ember)}
+.call-top{background:var(--ember);color:#0b0d10;font-weight:700;text-decoration:none;padding:.6rem 1.15rem;border-radius:8px;font-size:.95rem;transition:transform .25s ease,box-shadow .25s ease}
+.call-top:hover,.call-top:focus{transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,106,0,.45)}
+
+/* ====== HERO ====== */
+.hero{position:relative;min-height:92vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:4rem 1.25rem 6.5rem;isolation:isolate;overflow:hidden;
+  background:
+    linear-gradient(180deg,rgba(11,13,16,.2) 0%,rgba(11,13,16,.75) 70%,var(--carbon) 100%),
+    repeating-linear-gradient(90deg,transparent 0 118px,rgba(139,152,168,.05) 118px 120px),
+    linear-gradient(160deg,#10141a 0%,#0b0d10 60%,#120d08 100%)}
+#sparks{position:absolute;inset:0;z-index:0;pointer-events:none}
+.hero::before{content:"";position:absolute;inset:auto 0 0 0;height:42%;z-index:-1;
+  background:radial-gradient(ellipse 72% 60% at 50% 100%,rgba(255,106,0,.2),transparent 70%)}
+.hazard{position:absolute;top:0;left:0;right:0;height:6px;z-index:2;
+  background:repeating-linear-gradient(-45deg,var(--ember) 0 18px,#0b0d10 18px 36px);opacity:.85}
+.kicker{font-size:.8rem;letter-spacing:.44em;text-transform:uppercase;color:var(--steel);margin-bottom:1rem;opacity:0;animation:rise .9s .15s ease forwards}
+.hero h1{font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:clamp(2.7rem,8.6vw,5.8rem);line-height:1.0;color:var(--chrome);max-width:16ch;margin:0 auto;letter-spacing:.015em;text-wrap:balance;opacity:0;animation:rise .9s .3s ease forwards}
+.hero h1 .ember{background:linear-gradient(100deg,var(--ember) 15%,#ffc25e 45%,var(--ember-hot) 70%,var(--ember) 95%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 6s linear infinite}
+@keyframes shimmer{to{background-position:-200% 0}}
+.hero .sub{max-width:40rem;margin:1.2rem auto 2rem;color:var(--mist);font-size:clamp(1rem,2.3vw,1.18rem);opacity:0;animation:rise .9s .45s ease forwards}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.cta-row{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap;opacity:0;animation:rise .9s .6s ease forwards}
+.cta{display:inline-block;font-weight:700;font-size:1.05rem;text-decoration:none;padding:1rem 2rem;border-radius:10px;transition:transform .25s ease,box-shadow .25s ease;will-change:transform;text-transform:uppercase;letter-spacing:.04em;font-family:var(--display)}
+.cta.primary{background:linear-gradient(120deg,var(--ember),var(--ember-hot));color:#0b0d10;box-shadow:0 10px 34px rgba(255,106,0,.4)}
+.cta.primary:hover,.cta.primary:focus{transform:translateY(-3px) scale(1.02);box-shadow:0 16px 44px rgba(255,106,0,.55)}
+.cta.ghost{color:var(--chrome);border:1.5px solid rgba(232,237,243,.4);background:rgba(11,13,16,.3)}
+.cta.ghost:hover,.cta.ghost:focus{transform:translateY(-3px);border-color:var(--ember);color:var(--ember-hot)}
+.hero .pin{margin-top:1.8rem;font-size:.9rem;color:var(--steel);opacity:0;animation:rise .9s .75s ease forwards}
+.lift-stage{width:min(620px,94%);margin:2.4rem auto 0;opacity:0;animation:rise 1s .8s ease forwards}
+.lift-stage svg{display:block;width:100%;height:auto}
+.scroll-hint{position:absolute;bottom:1rem;left:50%;transform:translateX(-50%);color:rgba(232,237,243,.55);font-size:1.4rem;animation:bob 2.2s ease-in-out infinite;z-index:1}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+
+/* marquee */
+.marquee{background:var(--ember);color:#0b0d10;overflow:hidden;white-space:nowrap;padding:.75rem 0;font-family:var(--display);font-weight:600;font-size:1.05rem;letter-spacing:.12em;transform:rotate(1.1deg) scale(1.02);margin:-1rem 0 0;position:relative;z-index:5;box-shadow:0 10px 30px rgba(0,0,0,.4);text-transform:uppercase}
+.marquee-track{display:inline-block;animation:marquee 24s linear infinite}
+@media (prefers-reduced-motion: reduce){.marquee-track{animation:none}}
+.marquee span{margin:0 1.1rem}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+section{padding:5rem 1.25rem;max-width:68rem;margin:0 auto;position:relative}
+.sec-kicker{font-size:.78rem;letter-spacing:.42em;text-transform:uppercase;color:var(--ember-hot);margin-bottom:.7rem}
+h2{font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:clamp(1.9rem,4.6vw,3rem);color:var(--chrome);line-height:1.05;margin-bottom:1rem;letter-spacing:.02em;text-wrap:balance}
+h2 em{font-style:normal;color:var(--ember)}
+
+/* services — asymmetric */
+.svc-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:1.2rem;margin-top:2.2rem}
+.svc{position:relative;border-radius:16px;padding:2rem 1.8rem;background:linear-gradient(150deg,var(--panel) 0%,var(--carbon2) 100%);border:1px solid rgba(139,152,168,.18);overflow:hidden;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+.svc:hover{transform:translateY(-6px);border-color:rgba(255,106,0,.55);box-shadow:0 22px 48px rgba(0,0,0,.5)}
+.svc .num{font-family:var(--display);font-size:.9rem;color:var(--ember-hot);letter-spacing:.2em}
+.svc h3{font-family:var(--display);font-weight:600;text-transform:uppercase;font-size:clamp(1.35rem,2.8vw,1.9rem);color:var(--chrome);margin:.35rem 0 .55rem;letter-spacing:.03em}
+.svc p{color:var(--mist);font-size:.98rem;max-width:34rem}
+.svc .gear{position:absolute;right:-24px;bottom:-26px;width:120px;opacity:.1;transition:opacity .35s ease,transform .6s ease}
+.svc:hover .gear{opacity:.28;transform:rotate(40deg)}
+.svc.feature{grid-row:span 2;display:flex;flex-direction:column;justify-content:flex-end;min-height:420px;
+  background:linear-gradient(165deg,#1d2530 0%,#14181e 50%,#1c1208 100%)}
+.svc.feature::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 70% 20%,rgba(255,106,0,.22),transparent 70%)}
+.svc.feature .engine-art{position:absolute;top:1.6rem;right:1.4rem;width:min(50%,210px);animation:floaty 7s ease-in-out infinite}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-10px) rotate(1.5deg)}}
+
+/* proof band — real credentials */
+.proof{max-width:none;background:linear-gradient(180deg,var(--carbon),#131921 50%,var(--carbon));text-align:center;padding:4.5rem 1.25rem}
+.proof-wrap{max-width:64rem;margin:2.5rem auto 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:2rem}
+.proof-item .big{font-family:var(--display);font-weight:700;font-size:clamp(2.4rem,5.6vw,3.8rem);color:var(--chrome);line-height:1}
+.proof-item .big .accent{color:var(--ember)}
+.proof-item p{color:var(--steel);font-size:.9rem;margin-top:.45rem;letter-spacing:.06em;text-transform:uppercase}
+.proof-src{font-size:.78rem;color:rgba(185,196,208,.45);margin-top:2rem}
+
+/* find */
+.find-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:1.4rem;margin-top:2.2rem;align-items:stretch}
+.find-card{border-radius:16px;padding:2rem 1.8rem;background:linear-gradient(150deg,var(--panel),var(--carbon2));border:1px solid rgba(139,152,168,.18)}
+.find-card h3{font-family:var(--display);text-transform:uppercase;color:var(--chrome);font-size:1.25rem;margin-bottom:.8rem;letter-spacing:.04em}
+.find-card a{color:var(--ember-hot);text-decoration:none;font-weight:600}
+.find-card a:hover{text-decoration:underline}
+.find-card .addr{font-size:1.02rem;color:var(--mist)}
+.find-card .note{font-size:.84rem;color:rgba(185,196,208,.55);margin-top:1rem;font-style:italic}
+.hours{width:100%;border-collapse:collapse;margin-top:1rem}
+.hours td{padding:.4rem .2rem;border-bottom:1px solid rgba(139,152,168,.15);font-size:.95rem}
+.order-links{display:flex;flex-direction:column;gap:.7rem;margin-top:1.2rem}
+.order-links a{display:block;text-align:center;padding:.85rem;border-radius:10px;font-weight:700;text-decoration:none;transition:transform .25s ease;font-family:var(--display);text-transform:uppercase;letter-spacing:.05em}
+.order-links a:hover{transform:translateY(-2px)}
+.order-links .call{background:var(--ember);color:#0b0d10}
+.map-wrap{border-radius:16px;overflow:hidden;border:1px solid rgba(139,152,168,.22);min-height:340px;box-shadow:0 18px 44px rgba(0,0,0,.45)}
+.map-wrap iframe{display:block;width:100%;height:100%;min-height:340px;border:0;filter:saturate(.8) contrast(1.05)}
+.map-note{font-size:.78rem;color:rgba(185,196,208,.45);margin-top:.6rem}
+
+/* estimate */
+.estimate{max-width:none;background:linear-gradient(170deg,#131921 0%,var(--carbon) 60%);padding:5rem 1.25rem}
+.est-inner{max-width:36rem;margin:0 auto;text-align:center}
+.est-inner form{text-align:left;margin-top:2rem;background:rgba(26,32,41,.7);border:1px solid rgba(139,152,168,.2);border-radius:16px;padding:2rem;backdrop-filter:blur(8px)}
+.est-inner label{display:block;font-weight:600;margin:.9rem 0 .3rem;font-size:.92rem;color:var(--steel);text-transform:uppercase;letter-spacing:.06em}
+.est-inner input,.est-inner textarea{width:100%;padding:.8rem .9rem;border:1px solid rgba(139,152,168,.3);border-radius:10px;font:inherit;background:rgba(11,13,16,.6);color:var(--chrome);transition:border-color .25s ease}
+.est-inner input:focus,.est-inner textarea:focus{outline:none;border-color:var(--ember)}
+.est-inner button{margin-top:1.3rem;width:100%;background:linear-gradient(120deg,var(--ember),var(--ember-hot));color:#0b0d10;font-weight:700;font-size:1.05rem;border:none;padding:1rem;border-radius:10px;cursor:pointer;transition:transform .25s ease,box-shadow .25s ease;font-family:var(--display);text-transform:uppercase;letter-spacing:.06em}
+.est-inner button:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(255,106,0,.45)}
+.est-inner small{display:block;margin-top:.8rem;color:rgba(185,196,208,.5);text-align:center}
+
+footer{background:#07090c;color:rgba(139,152,168,.6);text-align:center;padding:2rem 1rem 6rem;font-size:.85rem}
+.sticky-call{position:fixed;bottom:0;left:0;right:0;background:linear-gradient(120deg,var(--ember),var(--ember-hot));text-align:center;padding:.9rem;z-index:55;box-shadow:0 -6px 24px rgba(0,0,0,.5)}
+.sticky-call a{color:#0b0d10;font-weight:800;text-decoration:none;font-size:1.05rem;letter-spacing:.02em}
+
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
 .reveal.in{opacity:1;transform:none}
-@media (max-width:480px){.hero{padding:2.2rem 1rem 3rem}section{padding:2rem 1rem}}
+.reveal.d1{transition-delay:.12s}.reveal.d2{transition-delay:.24s}
+
+@media (max-width:760px){
+  .svc-grid{grid-template-columns:1fr}
+  .svc.feature{min-height:340px}
+  .find-grid{grid-template-columns:1fr}
+  section{padding:3.4rem 1.1rem}
+}
 </style>
 </head>
 <body>
@@ -76,102 +150,139 @@ footer{background:#121215;color:#8a97a5;text-align:center;padding:1.5rem 1rem 5.
   <a class="call-top" href="tel:+19073574030">📞 907-357-4030</a>
 </header>
 
-<section class="hero" style="max-width:none">
-  <h1>Wasilla's Shop for <em>Serious</em> Auto Repair</h1>
-  <p>Diagnostics, engine and transmission work, and honest maintenance — right on the Parks Highway, open six days a week.</p>
-  <div class="badge-row">
-    <span class="badge">📍 211 E Parks Hwy, Wasilla</span>
-    <span class="badge">🕢 Mon–Sat 7:30–5</span>
+<div class="hero">
+  <div class="hazard" aria-hidden="true"></div>
+  <canvas id="sparks" aria-hidden="true"></canvas>
+  <p class="kicker">Wasilla · Alaska · Since 2000</p>
+  <h1>Serious repair for <span class="ember">serious rigs</span></h1>
+  <p class="sub">Diagnostics, engine and transmission work, and honest maintenance — NAPA AutoCare shop with ASE-certified techs, right on the Parks Highway.</p>
+  <div class="cta-row">
+    <a class="cta primary" data-magnet href="tel:+19073574030">Call for an Estimate</a>
+    <a class="cta ghost" data-magnet href="#find">Find the Shop</a>
   </div>
-  <a class="cta" href="tel:+19073574030">Call for an Estimate</a>
-  <!-- Animated inline SVG: sedan on a lift with torque wrench + gear. Illustration, not a photo. -->
-  <svg class="hero-svg" viewBox="0 0 540 270" role="img" aria-label="Illustration of a car raised on a shop lift with a spinning gear">
-    <rect x="0" y="230" width="540" height="8" fill="#0d0d0f"/>
-    <!-- lift posts -->
-    <rect x="100" y="125" width="14" height="105" fill="#44444c"/>
-    <rect x="426" y="125" width="14" height="105" fill="#44444c"/>
-    <rect x="90" y="158" width="360" height="10" fill="#5a5a64">
-      <animate attributeName="y" values="158;148;158" dur="6s" repeatCount="indefinite"/>
-    </rect>
-    <!-- car body -->
-    <g>
-      <animateTransform attributeName="transform" type="translate" values="0 0;0 -10;0 0" dur="6s" repeatCount="indefinite"/>
-      <rect x="140" y="112" width="260" height="42" rx="10" fill="#c3362b"/>
-      <path d="M185 115 Q215 76 265 76 L315 76 Q355 78 372 114 Z" fill="#c3362b"/>
-      <path d="M210 112 Q228 86 262 86 L268 86 L268 112 Z" fill="#cfe3f5"/>
-      <path d="M278 112 L278 86 L312 86 Q342 88 355 112 Z" fill="#cfe3f5"/>
-      <circle cx="192" cy="158" r="22" fill="#1a1a1d"/><circle cx="192" cy="158" r="9" fill="#8a97a5"/>
-      <circle cx="350" cy="158" r="22" fill="#1a1a1d"/><circle cx="350" cy="158" r="9" fill="#8a97a5"/>
-    </g>
-    <!-- spinning gear -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" values="0 480 110;360 480 110" dur="8s" repeatCount="indefinite"/>
-      <circle cx="480" cy="110" r="22" fill="none" stroke="#8a97a5" stroke-width="9" stroke-dasharray="8 7"/>
-      <circle cx="480" cy="110" r="8" fill="#8a97a5"/>
-    </g>
-    <!-- wrench -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" values="-8 60 200;8 60 200;-8 60 200" dur="3s" repeatCount="indefinite"/>
-      <rect x="52" y="160" width="12" height="52" rx="4" fill="#8a97a5"/>
-      <circle cx="58" cy="156" r="12" fill="none" stroke="#8a97a5" stroke-width="8" stroke-dasharray="46 18"/>
-    </g>
-    <!-- sparkle -->
-    <circle cx="430" cy="190" r="3" fill="#ffd54f">
-      <animate attributeName="opacity" values="0;1;0" dur="2.2s" repeatCount="indefinite"/>
-    </circle>
-  </svg>
-  <p class="svg-caption">Illustration — real shop photos coming soon</p>
-</section>
+  <p class="pin">📍 211 E Parks Hwy, Wasilla · Mon–Sat 7:30–5</p>
 
-<section class="reveal">
-  <h2><span class="tick">//</span> Services</h2>
-  <div class="services">
-    <div class="card"><h3>Diagnostics &amp; Electrical</h3><p>Check-engine lights, sensors, and electrical faults — pinpointed before they leave you stranded at forty below.</p></div>
-    <div class="card"><h3>Engine &amp; Transmission</h3><p>From routine tune-ups to major engine and transmission work on trucks, SUVs, and daily drivers.</p></div>
-    <div class="card"><h3>Brakes &amp; Suspension</h3><p>Pads, rotors, struts, and steering — set up for frost heaves, gravel, and Alaska winters.</p></div>
-    <div class="card"><h3>Maintenance &amp; Oil Changes</h3><p>Oil, fluids, batteries, and seasonal prep to keep your rig reliable all year.</p></div>
+  <div class="lift-stage" aria-hidden="true">
+    <svg viewBox="0 0 620 260">
+      <rect x="0" y="238" width="620" height="8" fill="#05070a"/>
+      <rect x="140" y="120" width="14" height="120" fill="#2a3340"/>
+      <rect x="466" y="120" width="14" height="120" fill="#2a3340"/>
+      <rect x="128" y="160" width="364" height="10" fill="#3a4555">
+        <animate attributeName="y" values="160;148;160" dur="7s" repeatCount="indefinite"/>
+      </rect>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 -12;0 0" dur="7s" repeatCount="indefinite"/>
+        <rect x="185" y="112" width="250" height="44" rx="12" fill="#1f2835" stroke="#39465a" stroke-width="2"/>
+        <path d="M228 114 Q258 74 308 74 L352 74 Q392 76 410 114 Z" fill="#1f2835" stroke="#39465a" stroke-width="2"/>
+        <path d="M252 112 Q270 86 304 86 L310 86 L310 112 Z" fill="#9fc2e8" opacity=".85"/>
+        <path d="M320 112 L320 86 L350 86 Q378 88 392 112 Z" fill="#9fc2e8" opacity=".85"/>
+        <ellipse cx="310" cy="162" rx="150" ry="10" fill="#ff6a00" opacity=".35">
+          <animate attributeName="opacity" values=".35;.6;.35" dur="3.2s" repeatCount="indefinite"/>
+        </ellipse>
+        <circle cx="238" cy="158" r="23" fill="#0b0d10" stroke="#39465a" stroke-width="3"/><circle cx="238" cy="158" r="9" fill="#8b98a8"/>
+        <circle cx="392" cy="158" r="23" fill="#0b0d10" stroke="#39465a" stroke-width="3"/><circle cx="392" cy="158" r="9" fill="#8b98a8"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="0 548 96;360 548 96" dur="9s" repeatCount="indefinite"/>
+        <circle cx="548" cy="96" r="24" fill="none" stroke="#ff6a00" stroke-width="9" stroke-dasharray="9 8" opacity=".8"/>
+        <circle cx="548" cy="96" r="8" fill="#ff8c1a"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="-9 74 206;9 74 206;-9 74 206" dur="3.4s" repeatCount="indefinite"/>
+        <rect x="66" y="168" width="12" height="50" rx="4" fill="#8b98a8"/>
+        <circle cx="72" cy="164" r="12" fill="none" stroke="#8b98a8" stroke-width="8" stroke-dasharray="46 18"/>
+      </g>
+    </svg>
   </div>
-  <!-- JUAN: confirm actual service list with owner — typical shop services plus Yelp-listed categories (transmission repair, oil changes), not verified claims -->
-</section>
+  <div class="scroll-hint" aria-hidden="true">↓</div>
+</div>
 
-<section class="why reveal" style="max-width:none">
-  <div class="why-wrap">
-    <h2 style="grid-column:1/-1"><span class="tick">//</span> Why a local shop?</h2>
-    <div class="why-item"><span class="check">✓</span><p>Talk straight to the people working on your vehicle</p></div>
-    <div class="why-item"><span class="check">✓</span><p>Right on the Parks Highway — easy drop-off in Wasilla</p></div>
-    <div class="why-item"><span class="check">✓</span><p>Estimates before work begins</p></div>
-    <div class="why-item"><span class="check">✓</span><p>Open Saturdays — six days a week</p></div>
-  </div>
-</section>
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="mtrack">
+  <span>Diagnostics</span><span>◆</span><span>Engine</span><span>◆</span><span>Transmission</span><span>◆</span><span>Brakes</span><span>◆</span><span>Suspension</span><span>◆</span><span>Maintenance</span><span>◆</span>
+</div></div>
 
-<section class="reveal">
-  <h2><span class="tick">//</span> Hours &amp; Location</h2>
-  <div class="hours-nap">
-    <div>
-      <p><strong>Master Auto Repair, Inc.</strong><br>211 E Parks Hwy, Wasilla, AK 99654<br>
-      <a href="tel:+19073574030">907-357-4030</a></p>
-      <p style="margin-top:.75rem"><em>Hours and address from public listings — call to confirm.</em></p>
+<section>
+  <p class="sec-kicker reveal">The Work</p>
+  <h2 class="reveal">Built for <em>Alaska</em> miles</h2>
+  <div class="svc-grid">
+    <div class="svc feature reveal">
+      <svg class="engine-art" viewBox="0 0 200 140" aria-hidden="true">
+        <rect x="30" y="50" width="140" height="64" rx="10" fill="#2a3340" stroke="#4a586c" stroke-width="3"/>
+        <rect x="48" y="30" width="18" height="24" rx="4" fill="#4a586c"/>
+        <rect x="78" y="30" width="18" height="24" rx="4" fill="#4a586c"/>
+        <rect x="108" y="30" width="18" height="24" rx="4" fill="#4a586c"/>
+        <rect x="138" y="30" width="18" height="24" rx="4" fill="#4a586c"/>
+        <circle cx="100" cy="82" r="17" fill="none" stroke="#ff6a00" stroke-width="6" stroke-dasharray="7 6">
+          <animateTransform attributeName="transform" type="rotate" values="0 100 82;360 100 82" dur="6s" repeatCount="indefinite"/>
+        </circle>
+        <rect x="18" y="70" width="12" height="26" rx="3" fill="#ff8c1a" opacity=".9">
+          <animate attributeName="opacity" values=".9;.4;.9" dur="2.4s" repeatCount="indefinite"/>
+        </rect>
+      </svg>
+      <span class="num">01 — The Heavy Stuff</span>
+      <h3>Engine &amp; Transmission</h3>
+      <p>From routine tune-ups to major engine and transmission work on trucks, SUVs, and daily drivers. The jobs other shops send away — diagnosed, quoted in writing, done right.</p>
     </div>
-    <div>
-      <table>
+    <div class="svc reveal d1">
+      <span class="num">02</span>
+      <h3>Diagnostics &amp; Electrical</h3>
+      <p>Check-engine lights, sensors, and electrical faults — pinpointed before they leave you stranded at forty below.</p>
+      <svg class="gear" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="26" fill="none" stroke="#ff8c1a" stroke-width="10" stroke-dasharray="9 8"/></svg>
+    </div>
+    <div class="svc reveal d2">
+      <span class="num">03</span>
+      <h3>Brakes, Suspension &amp; Maintenance</h3>
+      <p>Pads, rotors, struts, oil and fluids — set up for frost heaves, gravel, and the long dark winter.</p>
+      <svg class="gear" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="26" fill="none" stroke="#8b98a8" stroke-width="10" stroke-dasharray="9 8"/></svg>
+    </div>
+  </div>
+  <!-- JUAN: confirm service list with owner — categories from Yelp/co-op listings, not verified claims -->
+</section>
+
+<div class="proof">
+  <p class="sec-kicker reveal">Why the Valley trusts this shop</p>
+  <h2 class="reveal">The <em>credentials</em></h2>
+  <div class="proof-wrap">
+    <div class="proof-item reveal"><div class="big"><span data-count="25" data-dec="0">0</span><span class="accent">+</span></div><p>years in business</p></div>
+    <div class="proof-item reveal d1"><div class="big">A<span class="accent">+</span></div><p>BBB accredited rating</p></div>
+    <div class="proof-item reveal d2"><div class="big">ASE</div><p>certified technicians</p></div>
+    <div class="proof-item reveal d2"><div class="big">NAPA</div><p>AutoCare center</p></div>
+  </div>
+  <p class="proof-src reveal">Credentials from public BBB and NAPA AutoCare Mat-Su listings, Oct 2026.</p>
+</div>
+
+<section id="find">
+  <p class="sec-kicker reveal">Find Us</p>
+  <h2 class="reveal">Right on the <em>Parks Highway</em></h2>
+  <div class="find-grid">
+    <div class="find-card reveal">
+      <h3>Master Auto Repair, Inc.</h3>
+      <p class="addr">211 E Parks Hwy<br>Wasilla, AK 99654<br><a href="tel:+19073574030">907-357-4030</a></p>
+      <table class="hours">
         <tr><td>Mon–Sat</td><td>7:30 am – 5:00 pm</td></tr>
         <tr><td>Sunday</td><td>Closed</td></tr>
       </table>
+      <div class="order-links">
+        <a class="call" href="tel:+19073574030">📞 Call the Shop</a>
+      </div>
+      <p class="note">Hours and address from public listings — call to confirm.</p>
+    </div>
+    <div class="map-wrap reveal d1">
+      <iframe title="Map — Master Auto Repair, 211 E Parks Hwy, Wasilla"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-149.4566%2C61.5762%2C-149.4366%2C61.5862&amp;layer=mapnik&amp;marker=61.5812%2C-149.4466"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
-  <div class="map-wrap">
-    <iframe title="Map — Master Auto Repair, 211 E Parks Hwy, Wasilla"
-      src="https://www.openstreetmap.org/export/embed.html?bbox=-149.4566%2C61.5762%2C-149.4366%2C61.5862&amp;layer=mapnik&amp;marker=61.5812%2C-149.4466"
-      loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-  <p class="map-note">Map data © OpenStreetMap contributors. <a href="https://www.openstreetmap.org/?mlat=61.5812&amp;mlon=-149.4466#map=16/61.5812/-149.4466" target="_blank" rel="noopener">View larger map</a></p>
+  <p class="map-note reveal">Map data © OpenStreetMap contributors. <a style="color:var(--steel)" href="https://www.openstreetmap.org/?mlat=61.5812&amp;mlon=-149.4466#map=16/61.5812/-149.4466" target="_blank" rel="noopener">View larger map</a></p>
 </section>
 
-<section class="quote reveal" style="max-width:none">
-  <div class="quote-inner">
-    <h2>Request an Estimate</h2>
+<div class="estimate">
+  <div class="est-inner">
+    <p class="sec-kicker reveal">No surprises</p>
+    <h2 class="reveal">Request an <em>estimate</em></h2>
+    <p class="reveal" style="color:var(--mist)">Tell us what the vehicle's doing. Estimates in writing before any work begins.</p>
     <!-- DEMO: form disabled. On commission: action="https://formsubmit.co/OWNER_EMAIL" method="POST" -->
-    <form onsubmit="alert('Demo form — not connected yet. On the live site this goes straight to the shop\'s email.');return false">
+    <form class="reveal" onsubmit="alert('Demo form — not connected yet. On the live site this goes straight to the shop\'s email.');return false">
       <label for="n">Name</label><input id="n" name="name" required>
       <label for="p">Phone</label><input id="p" name="phone" type="tel" required>
       <label for="m">What's going on with your vehicle?</label><textarea id="m" name="message" rows="4" required></textarea>
@@ -179,7 +290,7 @@ footer{background:#121215;color:#8a97a5;text-align:center;padding:1.5rem 1rem 5.
       <small>Demo form — not connected. The live version emails the shop directly.</small>
     </form>
   </div>
-</section>
+</div>
 
 <footer>
   <p>DEMO concept site — not commissioned by Master Auto Repair, Inc. Built by a Wasilla-local web designer as a free preview.</p>
@@ -189,9 +300,43 @@ footer{background:#121215;color:#8a97a5;text-align:center;padding:1.5rem 1rem 5.
 <div class="sticky-call"><a href="tel:+19073574030">📞 Tap to Call — 907-357-4030</a></div>
 
 <script>
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-setTimeout(()=>document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in')),2500);// safety: never leave content hidden
+setTimeout(()=>document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in')),3000);
+
+const mt=document.getElementById('mtrack');mt.innerHTML+=mt.innerHTML;
+
+const cio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;cio.unobserve(e.target);
+  const el=e.target,target=parseFloat(el.dataset.count),dec=parseInt(el.dataset.dec||0),t0=performance.now();
+  const step=t=>{const p=Math.min((t-t0)/1400,1),ease=1-Math.pow(1-p,3);
+    el.textContent=(target*ease).toFixed(dec);if(p<1)requestAnimationFrame(step)};
+  requestAnimationFrame(step);
+}),{threshold:.4});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+
+// ember sparks rising (reduced-motion aware)
+const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const cv=document.getElementById('sparks');
+if(!rm&&cv){const cx=cv.getContext('2d');let W,H,ps=[];
+  const fit=()=>{const r=cv.parentElement.getBoundingClientRect();W=cv.width=r.width;H=cv.height=r.height};
+  fit();addEventListener('resize',fit);
+  const COLORS=['rgba(255,106,0,.85)','rgba(255,140,26,.8)','rgba(255,194,94,.7)','rgba(232,237,243,.35)'];
+  for(let i=0;i<30;i++)ps.push({x:Math.random()*1400,y:Math.random()*800,r:1+Math.random()*2.4,vy:-(.3+Math.random()*.9),vx:-.1+Math.random()*.3,ph:Math.random()*6.28,c:COLORS[i%4]});
+  (function tick(){
+    if(cv.width<300&&cv.parentElement.getBoundingClientRect().width>300)fit();
+    cx.clearRect(0,0,W,H);
+    for(const p of ps){p.ph+=.03;p.x+=p.vx+Math.sin(p.ph)*.35;p.y+=p.vy;
+      if(p.y<-10){p.y=H+10;p.x=Math.random()*W}if(p.x>W+10)p.x=-10;if(p.x<-10)p.x=W+10;
+      cx.beginPath();cx.arc(p.x,p.y,p.r,0,6.28);cx.fillStyle=p.c;cx.fill()}
+    requestAnimationFrame(tick)})();
+}
+
+if(!rm)document.querySelectorAll('[data-magnet]').forEach(b=>{
+  b.addEventListener('pointermove',e=>{const r=b.getBoundingClientRect();
+    b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.12}px,${(e.clientY-r.top-r.height/2)*.25 - 3}px)`});
+  b.addEventListener('pointerleave',()=>b.style.transform='');
+});
 </script>
 </body>
 </html>
