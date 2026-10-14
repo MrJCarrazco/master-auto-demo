@@ -12,6 +12,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
+  /* height of the fixed Tap-to-Call bar at the bottom of the viewport;
+     used to keep the first view's bottom 56px of content out from under it */
+  --callbar-h:56px;
   --carbon:#0b0d10; --carbon2:#14181e; --panel:#1a2029; --steel:#8b98a8;
   --ember:#ff6a00; --ember-hot:#ff8c1a; --chrome:#e8edf3; --mist:#b9c4d0; --ok:#3ddc84;
   --display:'Oswald',Impact,sans-serif; --body:'Barlow',system-ui,sans-serif;
@@ -140,6 +143,18 @@ footer{background:#07090c;color:rgba(139,152,168,.6);text-align:center;padding:2
   .svc.feature{min-height:340px}
   .find-grid{grid-template-columns:1fr}
   section{padding:3.4rem 1.1rem}
+  /* --- Tap-to-Call bar clearance (phones only) -------------------------
+     .sticky-call is position:fixed, so the bottom var(--callbar-h) of the
+     first view is covered by the bar and is not usable space. The hero is
+     taller than what is left, which pushed its last line - the address -
+     under the bar. Shorten the hero's reserved height by the bar, pull its
+     top padding in by the same amount (never tighter than 1rem) and tighten
+     the two gaps above the address line. Measured clearance at 390x844 is
+     then >=15px even with the webfonts unavailable (fallback metrics run
+     taller). Desktop layout, colours and animation are untouched. */
+  .hero{min-height:calc(92vh - var(--callbar-h));padding-top:max(1rem,calc(4rem - var(--callbar-h)))}
+  .hero .sub{margin-bottom:1.4rem}
+  .hero .pin{margin-top:.8rem}
 }
 </style>
 </head>
@@ -149,7 +164,7 @@ footer{background:#07090c;color:rgba(139,152,168,.6);text-align:center;padding:2
 
 <header>
   <div class="logo">Master <span>Auto Repair</span></div>
-  <!-- JUAN: verify phone with owner before commissioning -->
+  <!-- TODO (studio): verify phone with owner before commissioning -->
   <a class="call-top" href="tel:+19073574030">📞 907-357-4030</a>
 </header>
 
@@ -239,7 +254,7 @@ footer{background:#07090c;color:rgba(139,152,168,.6);text-align:center;padding:2
       <svg class="gear" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="26" fill="none" stroke="#8b98a8" stroke-width="10" stroke-dasharray="9 8"/></svg>
     </div>
   </div>
-  <!-- JUAN: confirm service list with owner — categories from Yelp/co-op listings, not verified claims -->
+  <!-- TODO (studio): confirm service list with owner — categories from Yelp/co-op listings, not verified claims -->
 </section>
 
 <div class="proof">
