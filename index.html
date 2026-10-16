@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex, nofollow"><!-- DEMO: keep noindex until commissioned -->
+<meta name="robots" content="noindex, nofollow">
 <title>Master Auto Repair — Auto Repair in Wasilla, AK | DEMO</title>
 <meta name="description" content="DEMO website concept for Master Auto Repair, Wasilla AK — professional auto repair and maintenance at 211 E Parks Hwy.">
 <meta name="theme-color" content="#0b0d10">
@@ -93,14 +93,6 @@ h2 em{font-style:normal;color:var(--ember)}
 .svc.feature .engine-art{position:absolute;top:1.6rem;right:1.4rem;width:min(50%,210px);animation:floaty 7s ease-in-out infinite}
 @keyframes floaty{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-10px) rotate(1.5deg)}}
 
-/* proof band — real credentials */
-.proof{max-width:none;background:linear-gradient(180deg,var(--carbon),#131921 50%,var(--carbon));text-align:center;padding:4.5rem 1.25rem}
-.proof-wrap{max-width:64rem;margin:2.5rem auto 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:2rem}
-.proof-item .big{font-family:var(--display);font-weight:700;font-size:clamp(2.4rem,5.6vw,3.8rem);color:var(--chrome);line-height:1}
-.proof-item .big .accent{color:var(--ember)}
-.proof-item p{color:var(--steel);font-size:.9rem;margin-top:.45rem;letter-spacing:.06em;text-transform:uppercase}
-.proof-src{font-size:.78rem;color:rgba(185,196,208,.45);margin-top:2rem}
-
 /* find */
 .find-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:1.4rem;margin-top:2.2rem;align-items:stretch}
 .find-card{border-radius:16px;padding:2rem 1.8rem;background:linear-gradient(150deg,var(--panel),var(--carbon2));border:1px solid rgba(139,152,168,.18)}
@@ -164,16 +156,15 @@ footer{background:#07090c;color:rgba(139,152,168,.6);text-align:center;padding:2
 
 <header>
   <div class="logo">Master <span>Auto Repair</span></div>
-  <!-- TODO (studio): verify phone with owner before commissioning -->
   <a class="call-top" href="tel:+19073574030">📞 907-357-4030</a>
 </header>
 
 <div class="hero">
   <div class="hazard" aria-hidden="true"></div>
   <canvas id="sparks" aria-hidden="true"></canvas>
-  <p class="kicker">Wasilla · Alaska · Since 2000</p>
+  <p class="kicker">Wasilla · Alaska · Parks Highway</p>
   <h1>Serious repair for <span class="ember">serious rigs</span></h1>
-  <p class="sub">Diagnostics, engine and transmission work, and honest maintenance — NAPA AutoCare shop with ASE-certified techs, right on the Parks Highway.</p>
+  <p class="sub">Diagnostics, engine and transmission work, brakes, suspension and routine maintenance — right on the Parks Highway in Wasilla.</p>
   <div class="cta-row">
     <a class="cta primary" data-magnet href="tel:+19073574030">Call for an Estimate</a>
     <a class="cta ghost" data-magnet href="#find">Find the Shop</a>
@@ -239,7 +230,7 @@ footer{background:#07090c;color:rgba(139,152,168,.6);text-align:center;padding:2
       </svg>
       <span class="num">01 — The Heavy Stuff</span>
       <h3>Engine &amp; Transmission</h3>
-      <p>From routine tune-ups to major engine and transmission work on trucks, SUVs, and daily drivers. The jobs other shops send away — diagnosed, quoted in writing, done right.</p>
+      <p>From routine tune-ups to major engine and transmission work on trucks, SUVs, and daily drivers.</p>
     </div>
     <div class="svc reveal d1">
       <span class="num">02</span>
@@ -254,20 +245,7 @@ footer{background:#07090c;color:rgba(139,152,168,.6);text-align:center;padding:2
       <svg class="gear" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="26" fill="none" stroke="#8b98a8" stroke-width="10" stroke-dasharray="9 8"/></svg>
     </div>
   </div>
-  <!-- TODO (studio): confirm service list with owner — categories from Yelp/co-op listings, not verified claims -->
 </section>
-
-<div class="proof">
-  <p class="sec-kicker reveal">Why the Valley trusts this shop</p>
-  <h2 class="reveal">The <em>credentials</em></h2>
-  <div class="proof-wrap">
-    <div class="proof-item reveal"><div class="big"><span data-count="25" data-dec="0">0</span><span class="accent">+</span></div><p>years in business</p></div>
-    <div class="proof-item reveal d1"><div class="big">A<span class="accent">+</span></div><p>BBB accredited rating</p></div>
-    <div class="proof-item reveal d2"><div class="big">ASE</div><p>certified technicians</p></div>
-    <div class="proof-item reveal d2"><div class="big">NAPA</div><p>AutoCare center</p></div>
-  </div>
-  <p class="proof-src reveal">Credentials from public BBB and NAPA AutoCare Mat-Su listings, Oct 2026.</p>
-</div>
 
 <section id="find">
   <p class="sec-kicker reveal">Find Us</p>
@@ -283,23 +261,22 @@ footer{background:#07090c;color:rgba(139,152,168,.6);text-align:center;padding:2
       <div class="order-links">
         <a class="call" href="tel:+19073574030">📞 Call the Shop</a>
       </div>
-      <p class="note">Hours and address from public listings — call to confirm.</p>
+      <p class="note">Address, phone and hours above are taken from this shop's public directory listings (retrieved 16 Oct 2026) and may be out of date — please call to confirm.</p>
     </div>
     <div class="map-wrap reveal d1">
       <iframe title="Map — Master Auto Repair, 211 E Parks Hwy, Wasilla"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=-149.4566%2C61.5762%2C-149.4366%2C61.5862&amp;layer=mapnik&amp;marker=61.5812%2C-149.4466"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-149.456228%2C61.575917%2C-149.436228%2C61.585917&amp;layer=mapnik&amp;marker=61.580917%2C-149.446228"
         loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
-  <p class="map-note reveal">Map data © OpenStreetMap contributors. <a style="color:var(--steel)" href="https://www.openstreetmap.org/?mlat=61.5812&amp;mlon=-149.4466#map=16/61.5812/-149.4466" target="_blank" rel="noopener">View larger map</a></p>
+  <p class="map-note reveal">Map data © OpenStreetMap contributors. <a style="color:var(--steel)" href="https://www.openstreetmap.org/?mlat=61.580917&amp;mlon=-149.446228#map=16/61.580917/-149.446228" target="_blank" rel="noopener">View larger map</a></p>
 </section>
 
 <div class="estimate">
   <div class="est-inner">
     <p class="sec-kicker reveal">No surprises</p>
     <h2 class="reveal">Request an <em>estimate</em></h2>
-    <p class="reveal" style="color:var(--mist)">Tell us what the vehicle's doing. Estimates in writing before any work begins.</p>
-    <!-- DEMO: form disabled. On commission: action="https://formsubmit.co/OWNER_EMAIL" method="POST" -->
+    <p class="reveal" style="color:var(--mist)">Tell us what the vehicle's doing and the shop will get back to you.</p>
     <form class="reveal" onsubmit="alert('Demo form — not connected yet. On the live site this goes straight to the shop\'s email.');return false">
       <label for="n">Name</label><input id="n" name="name" required>
       <label for="p">Phone</label><input id="p" name="phone" type="tel" required>
@@ -311,8 +288,8 @@ footer{background:#07090c;color:rgba(139,152,168,.6);text-align:center;padding:2
 </div>
 
 <footer>
-  <p>DEMO concept site — not commissioned by Master Auto Repair, Inc. Built by a Wasilla-local web designer as a free preview.</p>
-  <p>Business info sourced from public directories; no affiliation implied.</p>
+  <p>DEMO concept site — not commissioned by, affiliated with, or endorsed by Master Auto Repair, Inc. Built by a local web designer as an unsolicited free preview.</p>
+  <p>Name, address, phone and hours are reproduced from the shop's public directory listings. This demo asserts no certifications, accreditations, ratings, awards or warranty terms on the shop's behalf.</p>
 </footer>
 
 <div class="sticky-call"><a href="tel:+19073574030">📞 Tap to Call — 907-357-4030</a></div>
@@ -323,15 +300,6 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 setTimeout(()=>document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in')),3000);
 
 const mt=document.getElementById('mtrack');mt.innerHTML+=mt.innerHTML;
-
-const cio=new IntersectionObserver(es=>es.forEach(e=>{
-  if(!e.isIntersecting)return;cio.unobserve(e.target);
-  const el=e.target,target=parseFloat(el.dataset.count),dec=parseInt(el.dataset.dec||0),t0=performance.now();
-  const step=t=>{const p=Math.min((t-t0)/1400,1),ease=1-Math.pow(1-p,3);
-    el.textContent=(target*ease).toFixed(dec);if(p<1)requestAnimationFrame(step)};
-  requestAnimationFrame(step);
-}),{threshold:.4});
-document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
 
 // ember sparks rising (reduced-motion aware)
 const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
